@@ -1,0 +1,16 @@
+/packages
+/JonDJones.com.Umbraco.Base/bin
+/JonDJones.com.Umbraco.Base/obj
+/JonDJones.com.Umbraco.Base/App_Data
+/JonDJones.com.Umbraco.Base/umbraco
+/JonDJones.com.Umbraco.Base/packages
+/JonDJones.com.Umbraco.Base/.vs
+/JonDJones.com.Umbraco.Base.Core/obj
+/JonDJones.com.Umbraco.Base.Core/bin
+/JonDJones.com.Umbraco.Base.Interfaces/obj
+/JonDJones.com.Umbraco.Base.Interfaces/bin
+/JonDJones.com.Umbraco.Base.Tests/bin
+/JonDJones.com.Umbraco.Base.Tests/obj
+/Umbraco.Web.PublishedContentModels/bin
+/Umbraco.Web.PublishedContentModels/obj
+/.vs
