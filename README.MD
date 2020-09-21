@@ -1,8 +1,8 @@
 
 
-# MusicFestival Vue.js Templates
+# JonDJones.Umbraco.V8.StarterKit
 
-JonDJones Umbraco 8 Base Build
+JonDJones Umbraco 8 Starter Kit
 
 ## Prerequisites
 
