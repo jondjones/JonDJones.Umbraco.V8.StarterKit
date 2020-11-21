@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JonDJones.com.Umbraco.Base.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Web.PublishedContentModels", "Umbraco.Web.PublishedContentModels\Umbraco.Web.PublishedContentModels.csproj", "{C23D605C-8D07-42A9-A759-3039452EF120}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JonDJones.com.Tutorials", "JonDJones.com.Tutorials\JonDJones.com.Tutorials.csproj", "{F5C306F8-8557-4C21-9FE5-7E90C8E440A8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C23D605C-8D07-42A9-A759-3039452EF120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C23D605C-8D07-42A9-A759-3039452EF120}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C23D605C-8D07-42A9-A759-3039452EF120}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5C306F8-8557-4C21-9FE5-7E90C8E440A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C306F8-8557-4C21-9FE5-7E90C8E440A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C306F8-8557-4C21-9FE5-7E90C8E440A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C306F8-8557-4C21-9FE5-7E90C8E440A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
