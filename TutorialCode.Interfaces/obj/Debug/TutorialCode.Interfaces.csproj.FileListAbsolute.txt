@@ -145,6 +145,7 @@ C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode.Interfaces\bin\Debug\Umbrac
 C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode.Interfaces\bin\Debug\Umbraco.Web.pdb
 C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode.Interfaces\bin\Debug\Umbraco.Web.xml
 C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode.Interfaces\bin\Debug\Umbraco.Web.UI.xml
+C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode.Interfaces\obj\Debug\TutorialCode.Interfaces.csprojAssemblyReference.cache
 C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode.Interfaces\obj\Debug\TutorialCode.Interfaces.csproj.CoreCompileInputs.cache
 C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode.Interfaces\obj\Debug\TutorialCode.Interfaces.csproj.CopyComplete
 C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode.Interfaces\obj\Debug\TutorialCode.Interfaces.dll

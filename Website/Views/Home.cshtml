@@ -1,12 +1,45 @@
-﻿@model TutorialCode.Controllers.Umbraco.HomeViewModel
+﻿@model TutorialCode.Controllers.Umbraco.ComposedViewModel<Home, TutorialCode.Controllers.Umbraco.HomeVM>
 @{
     Layout = null;
 }
 
-@if (Model.HasImage)
+@if (Model.ViewModel.HasImage)
 {
-<img src="@Model.CurrentPage.Image.Url" />
+    <img src="@Model.Page.Image.Url" />
 }
+
+<!-- Method Three Using A Mix-N-Match Appraoch
+@@model TutorialCode.Controllers.Umbraco.HomeViewM
+@@TutorialCode.Controllers.Umbraco.HomeViewM
+@@if (Model.HasImage)
+{
+    <img src="@@Model.Page.Image.Url" />
+}
+-->
+<!-- Method Three Using A Page Specific View Model
+@@model TutorialCode.Controllers.Umbraco.HomeVM
+
+@@if (Model.HasImage)
+{
+    <img src="@@Model.Page.Image" />
+}
+-->
+<!-- Method Two Using ModelBuilder Object Directly As View Model
+@@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Web.PublishedModels.Home>
+@@if(Model.Image != null)
+{
+
+    <img src="@@Model.Image.Url()" />
+}
+-->
+<!-- Method One with IPublishedContent
+@@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Core.Models.PublishedContent.IPublishedContent>
+{
+    var image = Model.Value<IPublishedContent>("Image");
+}
+<img src="image.Url()" />
+-->
+
 <ul>
     <li>
         <a href="~/hamster-dance/">Hamster Dance</a>

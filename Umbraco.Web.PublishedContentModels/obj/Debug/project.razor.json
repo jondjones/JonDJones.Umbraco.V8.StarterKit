@@ -1,0 +1,19 @@
+{
+  "FilePath": "c:\\Code\\JonDJones.Umbraco.V8.StarterKit\\Umbraco.Web.PublishedContentModels\\Umbraco.Web.PublishedContentModels.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.2"
+}
