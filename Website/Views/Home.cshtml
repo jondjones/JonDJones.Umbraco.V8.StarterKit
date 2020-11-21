@@ -1,8 +1,12 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Web.PublishedModels.Home>
+﻿@model TutorialCode.Controllers.Umbraco.HomeViewModel
 @{
     Layout = null;
 }
 
+@if (Model.HasImage)
+{
+<img src="@Model.CurrentPage.Image.Url" />
+}
 <ul>
     <li>
         <a href="~/hamster-dance/">Hamster Dance</a>

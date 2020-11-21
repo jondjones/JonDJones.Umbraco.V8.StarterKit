@@ -247,9 +247,9 @@
     <Compile Include="Controllers\Umbraco\HamsterDanceController.cs" />
     <Compile Include="Controllers\Umbraco\HomeController.cs" />
     <Compile Include="Controllers\API\MyApiController.cs" />
+    <Compile Include="ViewModel\Umbraco\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\Pages\HomepageService.cs" />
-    <Compile Include="ViewModel\Umbraco\HomepageViewModel.cs" />
     <Compile Include="ViewModel\Base\ComposedPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using TutorialCode.Interfaces;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Examine;
 

@@ -75,9 +75,7 @@ C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\HtmlAgilityPack.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\ICSharpCode.SharpZipLib.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\ImageProcessor.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\ImageProcessor.Web.dll
-C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Tutorials.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Umbraco.Base.Core.dll
-C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Umbraco.Base.Interfaces.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\LightInject.Annotation.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\LightInject.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\LightInject.Mvc.dll
@@ -138,10 +136,6 @@ C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\Umbraco.Web.UI.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\WebGrease.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Umbraco.Base.Core.pdb
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Umbraco.Base.Core.dll.config
-C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Umbraco.Base.Interfaces.pdb
-C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Umbraco.Base.Interfaces.dll.config
-C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Tutorials.pdb
-C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\JonDJones.com.Tutorials.dll.config
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\Umbraco.Web.PublishedContentModels.pdb
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\Umbraco.Web.PublishedContentModels.dll.config
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\ClientDependency.Core.pdb
@@ -221,3 +215,9 @@ C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\AngleSharp.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\HtmlSanitizer.dll
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\AngleSharp.xml
 C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\HtmlSanitizer.xml
+C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\TutorialCode.dll
+C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\TutorialCode.Interfaces.dll
+C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\TutorialCode.Interfaces.pdb
+C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\TutorialCode.Interfaces.dll.config
+C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\TutorialCode.pdb
+C:\Code\JonDJones.Umbraco.V8.StarterKit\Website\bin\TutorialCode.dll.config

@@ -1,7 +1,7 @@
 ﻿using TutorialCode.ViewModel.Umbraco;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace JDJ.Core.Service
+namespace TutorialCode.Service.Pages
 {
     public class HomepageService
     {
