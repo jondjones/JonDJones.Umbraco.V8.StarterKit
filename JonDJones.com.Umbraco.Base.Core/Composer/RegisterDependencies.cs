@@ -1,5 +1,4 @@
-﻿using Umbraco.Core;
-using Umbraco.Core.Composing;
+﻿using Umbraco.Core.Composing;
 
 namespace JDJ.Core.Composer
 {

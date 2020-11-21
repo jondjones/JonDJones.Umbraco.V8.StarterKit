@@ -1,6 +1,5 @@
 ﻿using JonDJones.com.Umbraco.Base.Core.Utility;
-using JonDJones.com.Umbraco.Base.Interfaces;
-using System.Configuration;
+using TutorialCode.Interfaces;
 
 namespace JonDJones.com.Umbraco.Base.Core
 {
@@ -14,6 +13,6 @@ namespace JonDJones.com.Umbraco.Base.Core
             _appSettingsService = appSettingsService;
         }
 
-        public int TestNewsletterCampaignId => _appSettingsService. GetInt("TestNewsletterCampaignId");
+        public int TestNewsletterCampaignId => _appSettingsService.GetInt("TestNewsletterCampaignId");
     }
 }

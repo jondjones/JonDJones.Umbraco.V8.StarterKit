@@ -1,17 +1,13 @@
-﻿using Umbraco.Core.Models.PublishedContent;
-using Umbraco.Web;
-using Umbraco.Core.Models;
-using ClientDependency.Core.Logging;
-using Umbraco.Core.Services;
-using System.Collections.Generic;
-using Examine;
-using Umbraco.Examine;
-using System.Linq;
+﻿using Examine;
 using System;
-using Serilog.Core;
-using Examine.Search;
-using JonDJones.com.Umbraco.Base.Core;
-using JonDJones.com.Umbraco.Base.Interfaces;
+using System.Collections.Generic;
+using System.Linq;
+using TutorialCode.Interfaces;
+using Umbraco.Core.Models;
+using Umbraco.Core.Models.PublishedContent;
+using Umbraco.Core.Services;
+using Umbraco.Examine;
+using Umbraco.Web;
 
 namespace JDJ.Core.Routing
 {

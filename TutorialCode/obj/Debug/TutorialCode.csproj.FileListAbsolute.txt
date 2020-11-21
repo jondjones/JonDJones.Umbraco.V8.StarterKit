@@ -1,0 +1,2 @@
+C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode\obj\Debug\TutorialCode.csprojAssemblyReference.cache
+C:\Code\JonDJones.Umbraco.V8.StarterKit\TutorialCode\obj\Debug\TutorialCode.csproj.CoreCompileInputs.cache

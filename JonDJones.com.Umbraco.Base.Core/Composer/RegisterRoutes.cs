@@ -1,7 +1,4 @@
-﻿using System;
-using System.Web.Mvc;
-using System.Web.Routing;
-using Umbraco.Core.Composing;
+﻿using Umbraco.Core.Composing;
 
 namespace JDJ.Core.Composer
 {
