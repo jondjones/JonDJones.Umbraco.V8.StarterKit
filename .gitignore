@@ -16,3 +16,9 @@
 /Umbraco.Web.PublishedContentModels/bin
 /Umbraco.Web.PublishedContentModels/obj
 /.vs
+
+
+\JonDJones.com.Umbraco.Base.Core\obj
+\ Website\App_Data
+Website\bin\*.dll
+Website/bin/*
