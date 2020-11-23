@@ -244,6 +244,7 @@
   <ItemGroup>
     <Compile Include="Components\RegisterSettingsComponent.cs" />
     <Compile Include="Composers\Composer.cs" />
+    <Compile Include="Controllers\Blocks\BlockController.cs" />
     <Compile Include="Controllers\Umbraco\HamsterDanceController.cs" />
     <Compile Include="Controllers\Umbraco\HomeController.cs" />
     <Compile Include="Controllers\API\MyApiController.cs" />

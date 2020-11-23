@@ -380,6 +380,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLock.generated.cs" />
     <Compile Include="File.generated.cs" />
     <Compile Include="Folder.generated.cs" />
     <Compile Include="HamsterDance.generated.cs" />
@@ -387,6 +388,7 @@
     <Compile Include="Image.generated.cs" />
     <Compile Include="InsultApi.generated.cs" />
     <Compile Include="Member.generated.cs" />
+    <Compile Include="MyTet.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -377,6 +377,7 @@
     <Content Include="Views\HamsterDance.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\InsultAPI.cshtml" />
+    <Content Include="Views\BlockList\Components\bLock.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

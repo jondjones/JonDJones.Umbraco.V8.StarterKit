@@ -8,6 +8,7 @@
     {
         if (block?.ContentUdi == null) { continue; }
         var data = block.Content;
-        @Html.Partial("BlockList/Components/" + data.ContentType.Alias, block)        
+
+        @Html.Action("Index", "BLock",  new { item = block, alias = data.ContentType.Alias })
     }
 </div>

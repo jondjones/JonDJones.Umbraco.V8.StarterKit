@@ -1,4 +1,4 @@
-﻿using TutorialCode.ViewModel.Umbraco;
+﻿
 using Umbraco.Core.Models.PublishedContent;
 
 namespace TutorialCode.Service.Pages
@@ -9,13 +9,13 @@ namespace TutorialCode.Service.Pages
         {
         }
 
-        public HomepageViewModel GetHomepageViewModel(IPublishedContent content)
-        {
-            var viewModel = new HomepageViewModel
-            {
-            };
+        //public HomepageViewModel GetHomepageViewModel(IPublishedContent content)
+        //{
+        //    var viewModel = new HomepageViewModel
+        //    {
+        //    };
 
-            return viewModel;
-        }
+        //    return viewModel;
+        //}
     }
 }
