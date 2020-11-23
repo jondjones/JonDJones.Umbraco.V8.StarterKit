@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /packages
 /Website/bin
 /Website/obj
@@ -23,7 +22,6 @@
 \ Website\App_Data
 Website\bin\*.dll
 Website/bin/*
-=======
 \packages
 Website\bin
 \Website\obj
@@ -60,4 +58,3 @@ TutorialCode.Tests/obj/*
 Umbraco.Web.PublishedContentModels/bin/*
 Umbraco.Web.PublishedContentModels/obj/*
 .vs/*
->>>>>>> eb36af8c60fd0d3df96ce65b033ec441c0d7e909

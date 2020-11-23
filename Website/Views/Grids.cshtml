@@ -1,1 +1,3 @@
-﻿@Html.GetBlockListHtml(Model.BlockList)
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Web.PublishedModels.Home> 
+    
+@Html.GetBlockListHtml(Model.BlockList)

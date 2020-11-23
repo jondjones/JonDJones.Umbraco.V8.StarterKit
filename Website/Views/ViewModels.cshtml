@@ -1,0 +1,33 @@
+﻿@model TutorialCode.Controllers.Umbraco.ComposedViewModel<ViewModels, TutorialCode.Controllers.Umbraco.DedicatedViewModel>
+@{
+    Layout = null;
+}
+
+@if (Model.ViewModel.HasImage)
+{
+    <img src="@Model.Page.Image.Url" />
+}
+
+<!-- Method Three - Using A Page Specific View Model
+@@model TutorialCode.Controllers.Umbraco.DedicatedViewModel
+@@if (Model.HasImage)
+{
+    <img src="@@Model.Page.Image" />
+}
+-->
+
+<!-- Method Two - Use The Model Generaetd By Umbraco
+@@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Web.PublishedModels.ViewModels>
+@@if(Model.Image != null)
+{
+
+<img src="@@Model.Image.Url()" />
+}
+
+<!-- Method One - Use IPublishedContent
+@@inherits Umbraco.Web.Mvc.UmbracoViewPage<Umbraco.Core.Models.PublishedContent.IPublishedContent>
+{
+    var image = Model.Value<IPublishedContent>("Image");
+}
+<img src="image.Url()" />
+-->

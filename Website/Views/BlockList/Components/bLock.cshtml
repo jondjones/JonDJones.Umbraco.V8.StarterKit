@@ -1,7 +1,9 @@
-﻿@model Umbraco.Web.PublishedModels.BLock
+﻿@model Umbraco.Core.Models.Blocks.BlockListItem
 
+
+@{var blockLit = new BLock(Model.Content);
+    
     <div>
         
-        @Model.Text
-
-    </div>
+        @blockLit.Text
+    </div>}
