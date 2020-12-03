@@ -1,0 +1,37 @@
+﻿@model TutorialCode.Controllers.Umbraco.ComposedViewModel<CringeSayings, TutorialCode.ViewModel.Umbraco.CringeSayingsViewModel>
+@{
+    Layout = null;
+}
+
+<style>
+    body > div {
+        margin-top: 2rem;
+        padding: 1rem;
+        background: #aaa;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+        body > div > div {
+            flex-grow: 1;
+            width: 33%;
+            height: 300px;
+            text-align: center;
+        }
+</style>
+<div>
+    @if (Model.ViewModel.BluePillOrTheRedOne)
+    {
+        <div><img src="~/tutorial-assets/cringe-0.jpg" height="250" width="250" /></div>
+        <div><img src="~/tutorial-assets/cringe-1.jpg" height="250" width="250" /></div>
+        <div><img src="~/tutorial-assets/cringe-2.jpg" height="250" width="250" /></div>
+    }
+    @if (Model.ViewModel.DisplayRow)
+    {
+        <div><img src="~/tutorial-assets/cringe-3.gif" height="250" width="250" /></div>
+        <div><img src="~/tutorial-assets/cringe-4.gif" height="250" width="250" /></div>
+        <div><img src="~/tutorial-assets/cringe-5.gif" height="250" width="250" /></div>
+    }
+</div>
+
+

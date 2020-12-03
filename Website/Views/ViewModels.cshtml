@@ -5,10 +5,10 @@
 
 @if (Model.ViewModel.HasImage)
 {
-    <img src="@Model.Page.Image.Url" />
+    <img src="@Model.Page.Image.Url()" />
 }
 
-<!-- Method Three - Using A Page Specific View Model
+<!-- Method Three - Using A Deciated View Model
 @@model TutorialCode.Controllers.Umbraco.DedicatedViewModel
 @@if (Model.HasImage)
 {
