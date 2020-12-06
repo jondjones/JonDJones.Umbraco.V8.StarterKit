@@ -391,6 +391,18 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="tutorial-assets\angry.jpg" />
+    <Content Include="tutorial-assets\anin.gif" />
+    <Content Include="tutorial-assets\banner-styles.css" />
+    <Content Include="tutorial-assets\cringe-0.jpg" />
+    <Content Include="tutorial-assets\cringe-1.png" />
+    <Content Include="tutorial-assets\gerbil.gif" />
+    <Content Include="tutorial-assets\hamburgler.jpg" />
+    <Content Include="tutorial-assets\hamu.gif" />
+    <Content Include="tutorial-assets\hamwalk.gif" />
+    <Content Include="tutorial-assets\pencilani.gif" />
+    <Content Include="tutorial-assets\vid1.mov" />
+    <Content Include="tutorial-assets\wombat.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -417,11 +429,11 @@
     <Content Include="Views\BlockList\Components\bLock.cshtml" />
     <Content Include="Views\Grids.cshtml" />
     <Content Include="Views\ViewModels.cshtml" />
+    <Content Include="Views\CringeSayings.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="tutorial-assets\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

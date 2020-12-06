@@ -381,6 +381,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLock.generated.cs" />
+    <Compile Include="CringeSayings.generated.cs" />
+    <Compile Include="FeatureFlags.generated.cs" />
     <Compile Include="File.generated.cs" />
     <Compile Include="Folder.generated.cs" />
     <Compile Include="Grids.generated.cs" />
@@ -391,6 +393,7 @@
     <Compile Include="Member.generated.cs" />
     <Compile Include="MyTet.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.generated.cs" />
     <Compile Include="ViewModels.generated.cs" />
   </ItemGroup>
   <ItemGroup>
