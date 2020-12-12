@@ -394,6 +394,7 @@
     <Compile Include="MyTet.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.generated.cs" />
+    <Compile Include="SimpleFormExample.generated.cs" />
     <Compile Include="ViewModels.generated.cs" />
   </ItemGroup>
   <ItemGroup>

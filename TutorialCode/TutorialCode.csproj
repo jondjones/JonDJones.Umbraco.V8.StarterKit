@@ -247,19 +247,23 @@
     <Compile Include="Controllers\Blocks\BlockController.cs" />
     <Compile Include="Controllers\Umbraco\CringeSayingsController.cs" />
     <Compile Include="Controllers\Umbraco\HamsterDanceController.cs" />
+    <Compile Include="Controllers\Umbraco\SimpleFormExampleController.cs" />
     <Compile Include="Controllers\Umbraco\ViewModelsController.cs" />
     <Compile Include="Controllers\Umbraco\HomeController.cs" />
     <Compile Include="Controllers\API\MyApiController.cs" />
     <Compile Include="Service\HomepageService.cs" />
     <Compile Include="Service\ISitePages.cs" />
     <Compile Include="Service\SettingsService.cs" />
+    <Compile Include="ViewModel\Umbraco\ContactFormViewModel.cs" />
     <Compile Include="ViewModel\Umbraco\CringeSayingsViewModel.cs" />
+    <Compile Include="ViewModel\Umbraco\EmptyVIewModel.cs" />
     <Compile Include="ViewModel\Umbraco\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\Base\ComposedPageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <Compile Include="Controllers\SurfacaeController\ContactFormController.cs" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

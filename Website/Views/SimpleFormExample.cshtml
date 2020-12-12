@@ -1,0 +1,72 @@
+﻿@model TutorialCode.Controllers.Umbraco.ComposedViewModel<SimpleFormExample, TutorialCode.ViewModel.Umbraco.EmptyViewModel>
+@{
+    Layout = null;
+}
+
+<style type="text/css">
+    body {
+        background-color: #ff0000;
+        color: white;
+        text-align: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+
+    label {
+        vertical-align: middle;
+        display: block;
+        margin-top: 1rem;
+        margin-bottom: 0.5rem
+    }
+
+    button {
+        margin-top: 1rem;
+    }
+
+    ::-webkit-input-placeholder {
+        text-align: center;
+    }
+</style>
+
+<div>
+    <img src="~/tutorial-assets/santa-2.jpg" width="250px" height="150px">
+    <img src="~/tutorial-assets/santa_header.png" width="250px">
+    <img src="~/tutorial-assets/santa-1.jpg" width="250px" height="150px">
+</div>
+<div class='row'>
+    <div class='column'>
+        <h1>Example One - Using TEMP DATA</h1>
+        <div>
+            @{Html.RenderAction("RenderForm", "ContactForm");}
+        </div>
+    </div>
+    <div style="margin-top: 5rem;">
+        <img src="~/tutorial-assets/santa.gif">
+    </div>
+
+    <div class='column'>
+        <h1>Example Two - Using PARTIALS</h1>
+        <div>
+            @{Html.RenderAction("RenderFormOne", "ContactForm");}
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

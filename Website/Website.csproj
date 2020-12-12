@@ -395,7 +395,14 @@
     <Content Include="tutorial-assets\anin.gif" />
     <Content Include="tutorial-assets\banner-styles.css" />
     <Content Include="tutorial-assets\cringe-0.jpg" />
+    <Content Include="tutorial-assets\cringe-1.jpg" />
     <Content Include="tutorial-assets\cringe-1.png" />
+    <Content Include="tutorial-assets\cringe-2.jpg" />
+    <Content Include="tutorial-assets\cringe-3.gif" />
+    <Content Include="tutorial-assets\cringe-4.gif" />
+    <Content Include="tutorial-assets\cringe-5.gif" />
+    <Content Include="tutorial-assets\cringe-6.jpg" />
+    <Content Include="tutorial-assets\download.jpg" />
     <Content Include="tutorial-assets\gerbil.gif" />
     <Content Include="tutorial-assets\hamburgler.jpg" />
     <Content Include="tutorial-assets\hamu.gif" />
@@ -430,6 +437,11 @@
     <Content Include="Views\Grids.cshtml" />
     <Content Include="Views\ViewModels.cshtml" />
     <Content Include="Views\CringeSayings.cshtml" />
+    <Content Include="Views\Partials\ContactForm.cshtml" />
+    <Content Include="Views\SimpleFormExample.cshtml" />
+    <Content Include="Views\Partials\ContactFormOne.cshtml" />
+    <Content Include="Views\Partials\ContactFormOneSent.cshtml" />
+    <Content Include="Views\Partials\ContactFormOneError.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

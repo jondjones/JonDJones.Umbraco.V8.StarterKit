@@ -11,16 +11,15 @@
 /TutorialCode.Interfaces/bin
 /TutorialCode.Tests/bin
 /TutorialCode.Tests/obj
-/TutorialCode.Tests/bin
-/TutorialCode.Tests/obj
 /Umbraco.Web.PublishedContentModels/bin
 /Umbraco.Web.PublishedContentModels/obj
 /.vs
 
 
 \JonDJones.com.Umbraco.Base.Core\obj
-\ Website\App_Data
-Website\bin\*.dll
+\Website\App_Data
+\Website\App_Data\*
+Website\bin\*.dll\*.dll
 Website/bin/*
 \packages
 Website\bin

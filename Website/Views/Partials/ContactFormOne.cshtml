@@ -1,0 +1,29 @@
+﻿@inherits UmbracoViewPage<TutorialCode.ViewModel.Umbraco.ContactFormViewModel>
+
+<div>
+    @using (Html.BeginUmbracoForm("SubmitFormOne", "ContactForm", FormMethod.Post))
+    {
+        <div>
+            @Html.ValidationSummary()
+            @Html.AntiForgeryToken()
+        </div>
+
+        <div>
+            <div>
+                <label class="required">Name</label>
+                @Html.EditorFor(x => Model.Name, new { htmlAttributes = new { placeholder = "Name" } })
+            </div>
+            <div>
+                <label class="required">Naught Or Nice</label>
+                @Html.EditorFor(x => Model.NaughtyOrNice)
+            </div>
+            <div>
+                <label class="required">Santas List</label>
+                @Html.TextAreaFor(x => Model.SantasList, new { placeholder = "Gimme...", rows = "5" })
+            </div>
+            <div>
+                <button type="submit" class="btn" data-type="submit">Send To Lapland</button>
+            </div>
+        </div>
+    }
+</div>

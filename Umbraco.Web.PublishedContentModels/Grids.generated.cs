@@ -50,5 +50,12 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.1")]
 		[ImplementPropertyType("blockList")]
 		public global::Umbraco.Core.Models.Blocks.BlockListModel BlockList => this.Value<global::Umbraco.Core.Models.Blocks.BlockListModel>("blockList");
+
+		///<summary>
+		/// List View
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.1")]
+		[ImplementPropertyType("listView")]
+		public object ListView => this.Value("listView");
 	}
 }
