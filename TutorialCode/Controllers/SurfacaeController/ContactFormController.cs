@@ -25,25 +25,25 @@ namespace TutorialCode.Controllers.SurfacaeController
             return CurrentUmbracoPage();
         }
 
-        public ActionResult RenderFormOne()
-        {
-            var viewModel = new ContactFormViewModel();
-            return PartialView("ContactFormOne", viewModel);
-        }
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult SubmitFormOne(ContactFormViewModel model)
         {
             if (ModelState.IsValid)
-            { 
+            {
                 // Do something
-                return PartialView("ContactFormOneSent");
+                var vm = new EmptyViewModel();
+                return PartialView("ContactFormOneSent", vm);
             }
 
             return PartialView("ContactFormOneError");
         }
 
+        public ActionResult RenderFormOne()
+        {
+            var viewModel = new ContactFormViewModel();
+            return PartialView("ContactFormOne", viewModel);
+        }
 
     }
 }
