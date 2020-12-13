@@ -407,7 +407,18 @@
     <Content Include="tutorial-assets\hamburgler.jpg" />
     <Content Include="tutorial-assets\hamu.gif" />
     <Content Include="tutorial-assets\hamwalk.gif" />
+    <Content Include="tutorial-assets\header-1.jpg" />
+    <Content Include="tutorial-assets\header-2.jpg" />
+    <Content Include="tutorial-assets\header-3.jpg" />
+    <Content Include="tutorial-assets\header-4.jpg" />
+    <Content Include="tutorial-assets\header-5.jpg" />
+    <Content Include="tutorial-assets\header-6.jpg" />
+    <Content Include="tutorial-assets\header-7.jpg" />
     <Content Include="tutorial-assets\pencilani.gif" />
+    <Content Include="tutorial-assets\santa-1.jpg" />
+    <Content Include="tutorial-assets\santa-2.jpg" />
+    <Content Include="tutorial-assets\santa.gif" />
+    <Content Include="tutorial-assets\santa_header.png" />
     <Content Include="tutorial-assets\vid1.mov" />
     <Content Include="tutorial-assets\wombat.js" />
     <Content Include="Web.config" />
@@ -420,7 +431,6 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Textstring.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Rte.cshtml" />
     <Content Include="Views\Partials\Grid\Editors\Media.cshtml" />
@@ -442,6 +452,10 @@
     <Content Include="Views\Partials\ContactFormOne.cshtml" />
     <Content Include="Views\Partials\ContactFormOneSent.cshtml" />
     <Content Include="Views\Partials\ContactFormOneError.cshtml" />
+    <Content Include="Views\ComposersAndComponents.cshtml" />
+    <Content Include="Views\Shared\_Simple.cshtml" />
+    <Content Include="Views\Partials\SiteFurniture\Header.cshtml" />
+    <Content Include="Views\Partials\SiteFurniture\Footer.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -460,10 +474,6 @@
     <Content Include="Scripts\jquery-3.4.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JonDJones.com.Umbraco.Base.Core\JonDJones.com.Umbraco.Base.Core.csproj">
-      <Project>{514a541c-9d61-4262-ae91-a7a81444e5e1}</Project>
-      <Name>JonDJones.com.Umbraco.Base.Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\TutorialCode.Interfaces\TutorialCode.Interfaces.csproj">
       <Project>{3bbe9526-4064-4d8e-ae8f-7c1c395e690b}</Project>
       <Name>TutorialCode.Interfaces</Name>

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JonDJones.com.Umbraco.Base.Core", "JonDJones.com.Umbraco.Base.Core\JonDJones.com.Umbraco.Base.Core.csproj", "{514A541C-9D61-4262-AE91-A7A81444E5E1}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Umbraco.Web.PublishedContentModels", "Umbraco.Web.PublishedContentModels\Umbraco.Web.PublishedContentModels.csproj", "{C23D605C-8D07-42A9-A759-3039452EF120}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TutorialCode", "TutorialCode\TutorialCode.csproj", "{F5C306F8-8557-4C21-9FE5-7E90C8E440A8}"
@@ -21,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{514A541C-9D61-4262-AE91-A7A81444E5E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{514A541C-9D61-4262-AE91-A7A81444E5E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{514A541C-9D61-4262-AE91-A7A81444E5E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{514A541C-9D61-4262-AE91-A7A81444E5E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C23D605C-8D07-42A9-A759-3039452EF120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C23D605C-8D07-42A9-A759-3039452EF120}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C23D605C-8D07-42A9-A759-3039452EF120}.Release|Any CPU.ActiveCfg = Release|Any CPU

@@ -1,0 +1,72 @@
+﻿@using Umbraco.Web;
+@using TutorialCode.ViewModel.Umbraco;
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Example</title>
+        <style type="text/css">
+            .container {
+                display: grid;
+                grid-template-areas: "header header header" "nav content side" "footer footer footer";
+                grid-template-columns: 150px 1fr 150px;
+                grid-template-rows: auto 1fr auto;
+                grid-gap: 10px;
+                height: 80vh;
+            }
+            header {
+                grid-area: header;
+                background-color: red;
+            }
+
+            nav {
+                grid-area: nav;
+                margin-left: 0.5rem;
+                background-color: blue;
+            }
+
+            main {
+                grid-area: content;
+                background-color: cadetblue;
+            }
+
+            aside {
+                grid-area: side;
+                margin-right: 0.5rem;
+                background-color: azure;
+            }
+
+            footer {
+                grid-area: footer;
+                background-color: lightcoral;
+                height: 10vh;
+            }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            @Html.Action("RenderHeader", "SharedPartial")
+        </header>
+
+    <nav>
+        NAV
+    </nav>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <aside>
+        ASIDE
+    </aside>
+
+    <footer>
+        @Html.CachedPartial("SiteFurniture/Footer", new EmptyViewModel(), 3600)
+    </footer>
+    </div>
+</body>
+</html>
