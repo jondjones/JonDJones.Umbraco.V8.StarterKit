@@ -250,6 +250,7 @@
     <Compile Include="Controllers\Umbraco\ComposersAndComponents.cs" />
     <Compile Include="Controllers\Umbraco\CringeSayingsController.cs" />
     <Compile Include="Controllers\Umbraco\HamsterDanceController.cs" />
+    <Compile Include="Controllers\MVC\DiController.cs" />
     <Compile Include="Controllers\Umbraco\SimpleFormExampleController.cs" />
     <Compile Include="Controllers\Umbraco\ViewModelsController.cs" />
     <Compile Include="Controllers\Umbraco\HomeController.cs" />
@@ -258,6 +259,7 @@
     <Compile Include="Service\ISitePages.cs" />
     <Compile Include="Service\SettingsService.cs" />
     <Compile Include="ViewModel\Partials\HeaderViewModel.cs" />
+    <Compile Include="ViewModel\ScopedExample.cs" />
     <Compile Include="ViewModel\Umbraco\ContactFormViewModel.cs" />
     <Compile Include="ViewModel\Umbraco\CringeSayingsViewModel.cs" />
     <Compile Include="ViewModel\Partials\EmptyViewModel.cs" />

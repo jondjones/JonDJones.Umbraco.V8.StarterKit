@@ -14,6 +14,16 @@ namespace JDJ.Core.Composer
         public void Initialize()
         {
             RouteTable.Routes.MapRoute(
+               "DI",
+               "DI",
+               new
+               {
+                   controller = "Di",
+                   action = "Index",
+                   id = UrlParameter.Optional
+               });
+
+            RouteTable.Routes.MapRoute(
                "SharedPartial",
                "Partial/{action}/{id}",
                new
