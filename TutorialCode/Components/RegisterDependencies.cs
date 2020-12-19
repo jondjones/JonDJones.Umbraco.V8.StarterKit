@@ -25,6 +25,7 @@ public class RegisterDependencies : IUserComposer
             // Controllers
             composition.Register<BLockController>(Lifetime.Request);
             composition.Register<DiController>(Lifetime.Request);
+            composition.Register<SharedPartialController>();
 
             composition.Components().Append<RegisterSettingsComponent>();
 
