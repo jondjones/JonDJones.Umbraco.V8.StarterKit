@@ -1,6 +1,7 @@
 ﻿using System.Web.Mvc;
 using TutorialCode.Service;
 using TutorialCode.ViewModel.Umbraco;
+using Umbraco.Web;
 using Umbraco.Web.Models;
 using Umbraco.Web.Mvc;
 using Umbraco.Web.PublishedModels;
@@ -9,23 +10,29 @@ namespace TutorialCode.Controllers.Umbraco
 {
     public class CringeSayingsController : RenderMvcController
     {
-        private ISitePages _settings;
+        private IUmbracoContextFactory _umbracoContextFactory;
 
-        public CringeSayingsController(ISitePages settings)
+        public CringeSayingsController(
+            IUmbracoContextFactory umbracoContextFactory)
         {
-            _settings = settings;
+            _umbracoContextFactory = umbracoContextFactory;
         }
 
         public override ActionResult Index(ContentModel item)
         {
-            var hamster = new CringeSayings(item.Content);
+            var homepageService = new HomepageService(_umbracoContextFactory);
+            var featureFlagOne = homepageService.GetSettings().FeatureFlagOne;
+
+            var settingsService = new SettingsService(_umbracoContextFactory);
+            var sringeSayings = new CringeSayings(item.Content);
+
             return CurrentTemplate(new ComposedViewModel<CringeSayings, CringeSayingsViewModel>
             {
-                Page = hamster,
+                Page = sringeSayings,
                 ViewModel = new CringeSayingsViewModel
                 {
-                    BluePillOrTheRedOne = _settings.SettingsPage.BluePillOrTheRedOne,
-                    DisplayRow = _settings.FeatureFlags.FeatureFlagOne
+                    BluePillOrTheRedOne = settingsService.SettingsPage.BluePillOrTheRedOne,
+                    DisplayRow = settingsService.FeatureFlags.FeatureFlagOne
                 }
             });
         }

@@ -14,6 +14,7 @@ namespace TutorialCode.Controllers.MVC
             _sitePages = sitePages;
         }
 
+         [OutputCache(Duration = 3600)]
         public ActionResult RenderHeader()
         {
             var viewModel = new HeaderViewModel
