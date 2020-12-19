@@ -1,10 +1,12 @@
-﻿using TutorialCode.Components;
+﻿using JDJ.Core.Composer;
+using TutorialCode.Components;
 using TutorialCode.Controllers.MVC;
 using TutorialCode.Controllers.Umbraco;
 using TutorialCode.Service;
 using TutorialCode.ViewModel;
 using Umbraco.Core;
 using Umbraco.Core.Composing;
+using Umbraco.Web;
 
 namespace TutorialCode.Composers
 {
@@ -24,9 +26,25 @@ namespace TutorialCode.Composers
             composition.Register<SharedPartialController>();
 
             composition.Components().Append<RegisterSettingsComponent>();
+            composition.Components().Append<ComponentOne>();
 
-            // Interfaces
+            // Dependency Injection
             composition.Register<ISitePages, SettingsService>(Lifetime.Singleton);
+
+            // Components
+            composition.Components();
+
+            // Content Apps
+            composition.ContentApps();
+
+            // Content ContentFinders
+            composition.ContentFinders();
+
+            // Dashboards
+            composition.Dashboards();
+
+            // Data Editors
+            composition.DataEditors();
         }
     }
 }

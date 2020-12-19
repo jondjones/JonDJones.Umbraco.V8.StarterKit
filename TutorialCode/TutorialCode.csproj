@@ -242,9 +242,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\ComponentOne.cs" />
     <Compile Include="Components\RegisterSettingsComponent.cs" />
+    <Compile Include="Composers\ComponentTwo.cs" />
+    <Compile Include="Composers\ComposerTwo.cs" />
     <Compile Include="Composers\RegisterCustomRouteComposer.cs" />
     <Compile Include="Composers\RegisterDependencies.cs" />
+    <Compile Include="Composers\ComposerOne.cs" />
     <Compile Include="Components\RegisterRoutes.cs" />
     <Compile Include="Controllers\Blocks\BlockController.cs" />
     <Compile Include="Controllers\MVC\SharedPartialController.cs" />
