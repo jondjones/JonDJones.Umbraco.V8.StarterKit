@@ -1,5 +1,4 @@
-﻿using System;
-using TutorialCode.Components;
+﻿using TutorialCode.Components;
 using TutorialCode.Controllers.MVC;
 using TutorialCode.Controllers.Umbraco;
 using TutorialCode.Service;
@@ -9,10 +8,7 @@ using Umbraco.Core.Composing;
 
 namespace TutorialCode.Composers
 {
-
-
-
-public class RegisterDependencies : IUserComposer
+    public class RegisterDependencies : IUserComposer
     {
         public void Compose(Composition composition)
         {
