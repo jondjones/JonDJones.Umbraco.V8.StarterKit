@@ -6,13 +6,11 @@ using TutorialCode.Service;
 using TutorialCode.ViewModel;
 using Umbraco.Core;
 using Umbraco.Core.Composing;
+using Umbraco.Web;
 
 namespace TutorialCode.Composers
 {
-
-
-
-public class RegisterDependencies : IUserComposer
+    public class RegisterDependencies : IUserComposer
     {
         public void Compose(Composition composition)
         {
@@ -22,14 +20,15 @@ public class RegisterDependencies : IUserComposer
             composition.Register<TransientExample>(Lifetime.Transient);
             composition.Register<SingltonExample>(Lifetime.Singleton);
 
-            // Controllers
-            composition.Register<BLockController>(Lifetime.Request);
-            composition.Register<DiController>(Lifetime.Request);
+            // Vanilla Controllers
+            composition.Register<BLockController>(Lifetime.Transient);
+            composition.Register<DiController>(Lifetime.Transient);
 
-            composition.Components().Append<RegisterSettingsComponent>();
+            // Scheduled Task
+            // composition.Components().Append<ReoccurringTasks>();
 
             // Interfaces
-            composition.Register<ISitePages, SettingsService>(Lifetime.Singleton);
+            composition.Register<ISitePages, SettingsService>(Lifetime.Transient);
         }
     }
 }

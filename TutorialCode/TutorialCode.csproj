@@ -242,10 +242,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Components\RegisterSettingsComponent.cs" />
-    <Compile Include="Components\RegisterDependencies.cs" />
-    <Compile Include="Composers\RegisterRoutes.cs" />
+    <Compile Include="Components\ReoccurringTasks.cs" />
+    <Compile Include="Components\MapHttpAttributeRoutes.cs" />
+    <Compile Include="Composers\RegisterCustomRouteComposer.cs" />
+    <Compile Include="Composers\RegisterDependencies.cs" />
+    <Compile Include="ScheduledTask\MyLogger.cs" />
+    <Compile Include="Components\RouteTable.cs" />
     <Compile Include="Controllers\Blocks\BlockController.cs" />
+    <Compile Include="Controllers\MVC\MemberController.cs" />
     <Compile Include="Controllers\MVC\SharedPartialController.cs" />
     <Compile Include="Controllers\Umbraco\ComposersAndComponents.cs" />
     <Compile Include="Controllers\Umbraco\CringeSayingsController.cs" />
