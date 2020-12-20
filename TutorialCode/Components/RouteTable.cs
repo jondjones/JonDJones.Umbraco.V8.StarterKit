@@ -5,7 +5,7 @@ using Umbraco.Web;
 
 namespace JDJ.Core.Composer
 {
-    public class RegisterCustomRouteComponent : IComponent
+    public class RouteTableComponent : IComponent
     {
         public void Initialize()
         {

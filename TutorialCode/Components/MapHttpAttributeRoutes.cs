@@ -3,7 +3,7 @@ using Umbraco.Core.Composing;
 
 namespace TutorialCode.Components
 {
-    public class RegisterSettingsComponent : IComponent
+    public class MapHttpAttributeRoutes : IComponent
     {
         public void Initialize()
         {

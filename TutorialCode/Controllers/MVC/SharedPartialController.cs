@@ -6,10 +6,10 @@ namespace TutorialCode.Controllers.MVC
 {
     public class SharedPartialController : Controller
     {
-        private readonly ISitePages _sitePages;
+        private readonly ISettingsService _sitePages;
 
         public SharedPartialController(
-            ISitePages sitePages)
+            ISettingsService sitePages)
         {
             _sitePages = sitePages;
         }
@@ -19,7 +19,7 @@ namespace TutorialCode.Controllers.MVC
         {
             var viewModel = new HeaderViewModel
             {
-                RedPill = _sitePages.SettingsPage.BluePillOrTheRedOne
+                RedPill = _sitePages.FeatureFlags.FeatureFlagOne
             };
 
             return PartialView("SiteFurniture/Header", viewModel);

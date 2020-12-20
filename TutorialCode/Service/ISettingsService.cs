@@ -2,7 +2,7 @@
 
 namespace TutorialCode.Service
 {
-    public interface ISitePages
+    public interface ISettingsService
     {
         Settings SettingsPage { get; }
 

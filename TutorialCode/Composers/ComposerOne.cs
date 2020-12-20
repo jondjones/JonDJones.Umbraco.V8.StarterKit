@@ -1,4 +1,5 @@
-﻿using TutorialCode.Components;
+﻿using JDJ.Core.Composer;
+using TutorialCode.Components;
 using TutorialCode.Controllers.MVC;
 using TutorialCode.Controllers.Umbraco;
 using TutorialCode.Service;
@@ -14,7 +15,7 @@ namespace TutorialCode.Composers
     {
         public void Compose(Composition composition)
         {
-            composition.Components().Append<RegisterSettingsComponent>();
+            composition.Components().Append<ComponentOne>();
         }
     }
 }

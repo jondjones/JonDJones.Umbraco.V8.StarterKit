@@ -4,7 +4,7 @@ using Umbraco.Web.PublishedModels;
 
 namespace TutorialCode.Service
 {
-    public class HomepageService
+    public class HomepageService : IHomepageService
     {
         private IUmbracoContextFactory _umbracoContextFactory;
 

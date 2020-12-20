@@ -314,6 +314,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Plugins\MyContentApp\myContentApp.html" />
     <Content Include="App_Plugins\uSync8\backoffice\uSync8\dashboard.html" />
     <Content Include="App_Plugins\uSync8\backoffice\uSync8\uSyncDashboardController.js" />
     <Content Include="App_Plugins\uSync8\changeDialog.html" />
@@ -477,10 +478,6 @@
     <ProjectReference Include="..\TutorialCode.Interfaces\TutorialCode.Interfaces.csproj">
       <Project>{3bbe9526-4064-4d8e-ae8f-7c1c395e690b}</Project>
       <Name>TutorialCode.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\TutorialCode\TutorialCode.csproj">
-      <Project>{f5c306f8-8557-4c21-9fe5-7e90c8e440a8}</Project>
-      <Name>TutorialCode</Name>
     </ProjectReference>
     <ProjectReference Include="..\Umbraco.Web.PublishedContentModels\Umbraco.Web.PublishedContentModels.csproj">
       <Project>{c23d605c-8d07-42a9-a759-3039452ef120}</Project>

@@ -1,11 +1,8 @@
-﻿using JDJ.Core.Composer;
-using TutorialCode.Components;
-using Umbraco.Core.Composing;
+﻿﻿using Umbraco.Core.Composing;
 
-namespace TutorialCode.Composers
+namespace JDJ.Core.Composer
 {
-    public class RegisterCustomRouteComposer
-        : ComponentComposer<RegisterSettingsComponent>, IUserComposer
+    public class RegisterComponentOneComposer : ComponentComposer<ComponentOne>
     {
     }
 }
