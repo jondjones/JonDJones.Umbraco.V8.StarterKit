@@ -26,6 +26,7 @@ namespace TutorialCode.Composers
             composition.Register<SharedPartialController>();
 
             composition.Components().Append<RegisterSettingsComponent>();
+            composition.Components().Append<RegisterCustomRouteComponent>();
             composition.Components().Append<ComponentOne>();
 
             // Dependency Injection
