@@ -25,9 +25,10 @@ namespace TutorialCode.Composers
             composition.Register<DiController>(Lifetime.Request);
             composition.Register<SharedPartialController>();
 
-            composition.Components().Append<RegisterSettingsComponent>();
-            composition.Components().Append<RegisterCustomRouteComponent>();
+            // Composers
+            composition.Components().Append<RouteTableComponent>();
             composition.Components().Append<ComponentOne>();
+            // composition.Components().Append<ReoccurringTasks>();
 
             // Dependency Injection
             composition.Register<ISitePages, SettingsService>(Lifetime.Singleton);
