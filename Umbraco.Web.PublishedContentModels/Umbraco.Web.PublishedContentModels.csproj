@@ -381,6 +381,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLock.generated.cs" />
+    <Compile Include="CheeryQuery.generated.cs" />
     <Compile Include="ComposersAndComponents.generated.cs" />
     <Compile Include="CringeSayings.generated.cs" />
     <Compile Include="FeatureFlags.generated.cs" />
