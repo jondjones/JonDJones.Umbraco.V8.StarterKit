@@ -1,5 +1,5 @@
 ﻿using JDJ.Core.Composer;
-using TutorialCode.Components;
+using TutorialCode.ContentApps;
 using TutorialCode.Controllers.MVC;
 using TutorialCode.Controllers.Umbraco;
 using TutorialCode.Service;
@@ -20,24 +20,20 @@ namespace TutorialCode.Composers
             composition.Register<TransientExample>(Lifetime.Transient);
             composition.Register<SingltonExample>(Lifetime.Singleton);
 
+            // Dependency Injection
+            composition.Register<ISettingsService, SettingsService>(Lifetime.Singleton);
+
             // Controllers
             composition.Register<BLockController>(Lifetime.Request);
             composition.Register<DiController>(Lifetime.Request);
             composition.Register<SharedPartialController>();
 
-            // Composers
+            // Components
             composition.Components().Append<RouteTableComponent>();
             composition.Components().Append<ComponentOne>();
             // composition.Components().Append<ReoccurringTasks>();
 
-            // Dependency Injection
-            composition.Register<ISitePages, SettingsService>(Lifetime.Singleton);
-
-            // Components
-            composition.Components();
-
             // Content Apps
-            composition.ContentApps();
 
             // Content ContentFinders
             composition.ContentFinders();

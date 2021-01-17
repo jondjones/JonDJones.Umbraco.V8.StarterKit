@@ -1,0 +1,90 @@
+﻿@model TutorialCode.Controllers.Umbraco.ComposedViewModel<CheeryQuery, TutorialCode.ViewModel.Umbraco.CheeryQueryViewModel>
+    @using Umbraco.Web
+    @{
+    Layout = null;
+    }
+
+    <!--
+    ````````@@inherits Umbraco.Web.Mvc.UmbracoViewPage
+            would give you access to Umbraco hlpe rin view
+            If you use model then you need ot access it directly7THIS IS AN ANTI-PATTERN
+        -->
+    @{
+    var helper = Umbraco.Web.Composing.Current.UmbracoHelper;
+    var image = helper.Media(2180).Url.ToString();
+    }
+
+    <style type="text/css">
+
+        .header {
+            background-color: darkcyan;
+        }
+
+        .table {
+            with: 75%;
+        }
+
+        .column {
+            float: left;
+            width: 33.33%;
+        }
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        img {
+            width: 250px;
+        }
+
+        body {
+            font-size: 2rem;
+            background-color: darkseagreen;
+            color: white;
+            text-align: center;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            background-color: darkcyan;
+            width: 100%;
+            padding: 0.5rem;
+        }
+
+        .footer img {
+            height: 150px;
+
+        }
+    </style>
+
+    <div class="header">
+        <h2>
+            Road Runner Vs Wile E Coyote
+        </h2>
+    </div>
+
+    <div class="table">
+        <div class="row">
+            <div class="column"><img src="https://media.giphy.com/media/1itJeAgd3KgraI5ETG/giphy.gif" /></div>
+            <div class="column">Get From Cache Time : @Model.ViewModel.FromCacheTime</div>
+            <div class="column"><img src="@image" /></div>
+        </div>
+        <div class="row">
+            <div class="column"><img src="https://media.giphy.com/media/ao8Cx73oPgQCc/giphy.gif" /></div>
+            <div class="column">Get From Database Time : @Model.ViewModel.FromDatabaseTime</div>
+            <div class="column"><img src="@image" /></div>
+        </div>
+
+
+
+    </div>
+
+    <div class="footer">
+        <img src="@Model.ViewModel.CheerleaderUrl" />
+        <img src="@Model.ViewModel.CheerleaderOneUrl" />
+        <img src="@Model.ViewModel.CheerleaderTwoUrl" />
+        <img src="@Model.ViewModel.CheerleaderThreeUrl" />
+    </div>

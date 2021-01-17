@@ -249,6 +249,10 @@
     <Compile Include="Composers\ComposerTwo.cs" />
     <Compile Include="Composers\RegisterCustomRouteComposer.cs" />
     <Compile Include="Composers\RegisterDependencies.cs" />
+    <Compile Include="Composers\RegisterMyContentAppComposer.cs" />
+    <Compile Include="ContentApps\MyContentApp.cs" />
+    <Compile Include="ContentFinder\ContentFinder.cs" />
+    <Compile Include="Controllers\Umbraco\CheeryQueryController.cs" />
     <Compile Include="ScheduledTask\MyLogger.cs" />
     <Compile Include="Components\RouteTable.cs" />
     <Compile Include="Controllers\Blocks\BlockController.cs" />
@@ -263,10 +267,12 @@
     <Compile Include="Controllers\Umbraco\HomeController.cs" />
     <Compile Include="Controllers\API\MyApiController.cs" />
     <Compile Include="Service\HomepageService.cs" />
-    <Compile Include="Service\ISitePages.cs" />
+    <Compile Include="Service\IHomepageService.cs" />
+    <Compile Include="Service\ISettingsService.cs" />
     <Compile Include="Service\SettingsService.cs" />
     <Compile Include="ViewModel\Partials\HeaderViewModel.cs" />
     <Compile Include="ViewModel\ScopedExample.cs" />
+    <Compile Include="ViewModel\Umbraco\CheeryQueryViewModel.cs" />
     <Compile Include="ViewModel\Umbraco\ContactFormViewModel.cs" />
     <Compile Include="ViewModel\Umbraco\CringeSayingsViewModel.cs" />
     <Compile Include="ViewModel\Partials\EmptyViewModel.cs" />
