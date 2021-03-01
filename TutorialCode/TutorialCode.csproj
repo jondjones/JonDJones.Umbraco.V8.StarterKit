@@ -252,6 +252,7 @@
     <Compile Include="Composers\RegisterMyContentAppComposer.cs" />
     <Compile Include="ContentApps\MyContentApp.cs" />
     <Compile Include="ContentFinder\ContentFinder.cs" />
+    <Compile Include="Controllers\Umbraco\CachingController.cs" />
     <Compile Include="Controllers\Umbraco\CheeryQueryController.cs" />
     <Compile Include="ScheduledTask\MyLogger.cs" />
     <Compile Include="Components\RouteTable.cs" />
@@ -276,6 +277,7 @@
     <Compile Include="ViewModel\Umbraco\ContactFormViewModel.cs" />
     <Compile Include="ViewModel\Umbraco\CringeSayingsViewModel.cs" />
     <Compile Include="ViewModel\Partials\EmptyViewModel.cs" />
+    <Compile Include="ViewModel\Umbraco\CachingViewModel.cs" />
     <Compile Include="ViewModel\Umbraco\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\Base\ComposedPageViewModel.cs" />

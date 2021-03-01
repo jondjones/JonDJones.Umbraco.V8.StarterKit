@@ -416,6 +416,7 @@
     <Content Include="tutorial-assets\header-6.jpg" />
     <Content Include="tutorial-assets\header-7.jpg" />
     <Content Include="tutorial-assets\pencilani.gif" />
+    <Content Include="tutorial-assets\race.jpg" />
     <Content Include="tutorial-assets\santa-1.jpg" />
     <Content Include="tutorial-assets\santa-2.jpg" />
     <Content Include="tutorial-assets\santa.gif" />
@@ -458,6 +459,10 @@
     <Content Include="Views\Partials\SiteFurniture\Header.cshtml" />
     <Content Include="Views\Partials\SiteFurniture\Footer.cshtml" />
     <Content Include="Views\CheeryQuery.cshtml" />
+    <Content Include="Views\Caching.cshtml" />
+    <Content Include="Views\Shared\_Cache.cshtml" />
+    <Content Include="Views\Partials\CacheTime.cshtml" />
+    <Content Include="Views\Partial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

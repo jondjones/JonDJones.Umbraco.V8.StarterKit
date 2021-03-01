@@ -1,0 +1,75 @@
+﻿@model TutorialCode.ViewModel.Umbraco.CachingViewModel
+@using ClientDependency.Core.Mvc
+@using TutorialCode.ViewModel.Umbraco
+@{
+    Layout = "./Shared/_Cache.cshtml";
+}
+
+<style type="text/css">
+    .column {
+        float: left;
+        width: 50%;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    img {
+        width: 250px;
+    }
+
+    body {
+        font-size: 1rem;
+        color: white;
+        background-color: #33135C;
+    }
+</style>
+
+<div class="table">
+    <div class="row">
+        <div class="column"><img src="~/tutorial-assets/cat-head-lg.png"></div>
+        <div>
+            <h3>Page</h3>
+            <div>
+                Normal => @Model.Date
+            </div>
+            <div>
+                Data Cache => @Model.DateTwo
+            </div>
+            <div>
+                OutputCache Enabled => @Html.Action("OutputCache", "Caching")
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column"><img src="~/tutorial-assets/fish-right-lg.png"></div>
+        <div class="column">
+            <h3>Partial</h3>
+            <div>
+                Partial() => @Html.Partial("CacheTime", Model)
+            </div>
+            <div>
+                @* Cache Differently On Another Page *@
+                Cached() => @Html.CachedPartial("CacheTime", Model, 3600, true)
+
+                @{
+                    var vw = new CachingViewModel
+                    {
+                        Date = DateTime.Now.AddYears(1).ToString("T")
+                    };
+                }
+            </div>
+            <div>
+                Cached Again() => @Html.CachedPartial("CacheTime", vw, 3600, true)
+            </div>
+        </div>
+    </div>
+</div>
+
+@{Html.RequiresJs("~/Scripts/bootstrap.js");}
+@{Html.RequiresCss("~/Content/bootstrap-theme.css");}
+@{Html.RequiresCssFolder("~/Content/");}

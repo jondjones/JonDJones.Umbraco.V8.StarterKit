@@ -1,0 +1,25 @@
+﻿@using Umbraco.Web;
+@using TutorialCode.ViewModel.Umbraco;
+
+@using ClientDependency.Core.Mvc
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Example</title>
+
+    @Html.Raw(Html.RenderCssHere())
+</head>
+<body>
+    <div class="container">
+
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+
+    @Html.Raw(Html.RenderJsHere())
+</body>
+</html>

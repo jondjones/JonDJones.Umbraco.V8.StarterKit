@@ -1,12 +1,39 @@
 ﻿using System;
 using System.Web.Mvc;
+using Umbraco.Core.Composing;
+using Umbraco.Core.Events;
+using Umbraco.Core.Models;
 using Umbraco.Core.Models.PublishedContent;
+using Umbraco.Core.Services;
+using Umbraco.Core.Services.Implement;
 using Umbraco.Web.Models;
 using Umbraco.Web.Mvc;
 using Umbraco.Web.PublishedModels;
 
 namespace TutorialCode.Controllers.Umbraco
 {
+    public class MyMediaEventComponent : IComponent
+    {
+        public void Initialize()
+        {
+            MemberService.Saved += MemberService_Saved;
+        }
+
+        private void MemberService_Saved(IMemberService sender, SaveEventArgs<IMember> e)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Terminate()
+        {
+            MediaService.Saved -= MediaService_Saved;
+        }
+
+        private void MediaService_Saved(IMediaService sender, SaveEventArgs<IMedia> e)
+        {
+        }
+    }
+
     public class ViewModelsController : RenderMvcController
     {
         public override ActionResult Index(ContentModel model)
@@ -34,7 +61,7 @@ namespace TutorialCode.Controllers.Umbraco
     public class ComposedViewModel<TPage, TViewModel>
         where TPage : PublishedContentModel
     {
-        public TPage Page { get; set;  }
+        public TPage Page { get; set; }
 
         public TViewModel ViewModel { get; set; }
     }
@@ -68,6 +95,4 @@ namespace TutorialCode.Controllers.Umbraco
 
         public string ImageUrl { get; set; }
     }
-
-
 }

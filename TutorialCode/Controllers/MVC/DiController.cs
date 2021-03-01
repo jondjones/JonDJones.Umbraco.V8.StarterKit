@@ -1,18 +1,12 @@
-﻿using System;
-using System.Web.Mvc;
-using TutorialCode.Composers;
+﻿using System.Web.Mvc;
 using TutorialCode.ViewModel;
-using Umbraco.Core.Models.PublishedContent;
-using Umbraco.Web.Models;
-using Umbraco.Web.Mvc;
-using Umbraco.Web.PublishedModels;
 
 namespace TutorialCode.Controllers.Umbraco
 {
     public class DiController : Controller
     {
         public DiController(
-            TransientExample transientExample, 
+            TransientExample transientExample,
             TransientExample transientExample1,
             ScopedExample scopedExample,
             ScopedExample scopedExample1,

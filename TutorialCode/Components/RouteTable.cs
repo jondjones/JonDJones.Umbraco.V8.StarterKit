@@ -20,6 +20,26 @@ namespace JDJ.Core.Composer
                });
 
             RouteTable.Routes.MapRoute(
+               "NoCachePartial",
+               "Caching/Partial",
+               new
+               {
+                   controller = "Caching",
+                   action = "Partial",
+                   id = UrlParameter.Optional
+               });
+
+            RouteTable.Routes.MapRoute(
+               "NoCacheCaching",
+               "Caching/OutputCache",
+               new
+               {
+                   controller = "Caching",
+                   action = "OutputCache",
+                   id = UrlParameter.Optional
+               });
+
+            RouteTable.Routes.MapRoute(
                "SharedPartial",
                "Partial/{action}/{id}",
                new
