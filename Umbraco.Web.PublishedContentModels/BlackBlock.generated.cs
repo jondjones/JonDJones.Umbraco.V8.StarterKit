@@ -19,36 +19,36 @@ using Umbraco.ModelsBuilder.Embedded;
 
 namespace Umbraco.Web.PublishedModels
 {
-	/// <summary>Blocvk Two</summary>
-	[PublishedModel("blocvkTwo")]
-	public partial class BlocvkTwo : PublishedElementModel
+	/// <summary>BlackBlock</summary>
+	[PublishedModel("blackBlock")]
+	public partial class BlackBlock : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.1")]
-		public new const string ModelTypeAlias = "blocvkTwo";
+		public new const string ModelTypeAlias = "blackBlock";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.1")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.1")]
 		public new static IPublishedContentType GetModelContentType()
 			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.1")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BlocvkTwo, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<BlackBlock, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
 #pragma warning restore 0109
 
 		// ctor
-		public BlocvkTwo(IPublishedElement content)
+		public BlackBlock(IPublishedElement content)
 			: base(content)
 		{ }
 
 		// properties
 
 		///<summary>
-		/// Two
+		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.9.1")]
-		[ImplementPropertyType("two")]
-		public string Two => this.Value<string>("two");
+		[ImplementPropertyType("title")]
+		public string Title => this.Value<string>("title");
 	}
 }

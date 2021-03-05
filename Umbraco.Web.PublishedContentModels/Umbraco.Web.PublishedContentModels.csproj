@@ -380,7 +380,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BLock.generated.cs" />
+    <Compile Include="BlackBlock.generated.cs" />
+    <Compile Include="BlueBlock.generated.cs" />
     <Compile Include="Caching.generated.cs" />
     <Compile Include="CheeryQuery.generated.cs" />
     <Compile Include="ComposersAndComponents.generated.cs" />
@@ -395,9 +396,9 @@
     <Compile Include="Image.generated.cs" />
     <Compile Include="InsultApi.generated.cs" />
     <Compile Include="Member.generated.cs" />
-    <Compile Include="MyTet.generated.cs" />
     <Compile Include="Properties.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedBlock.generated.cs" />
     <Compile Include="Settings.generated.cs" />
     <Compile Include="SimpleFormExample.generated.cs" />
     <Compile Include="ViewModels.generated.cs" />

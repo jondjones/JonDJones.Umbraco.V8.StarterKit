@@ -50,11 +50,11 @@ namespace JDJ.Core.Composer
                });
 
             RouteTable.Routes.MapRoute(
-                "BLockController",
-                "BLock/{action}/{item}/{alias}",
+                "BlockController",
+                "Block/{action}/{item}/{alias}",
                 new
                 {
-                    controller = "BLock",
+                    controller = "Block",
                     action = "Index",
                     item = UrlParameter.Optional,
                     alias = UrlParameter.Optional,

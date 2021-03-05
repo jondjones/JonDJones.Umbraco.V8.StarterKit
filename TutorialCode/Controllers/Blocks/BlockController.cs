@@ -1,4 +1,6 @@
 ﻿using System.Web.Mvc;
+using TutorialCode.ViewModel.Base;
+using TutorialCode.ViewModel.Partials;
 using Umbraco.Core.Models.Blocks;
 using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web.Models;
@@ -9,14 +11,37 @@ namespace TutorialCode.Controllers.Umbraco
 {
     public class BLockController : Controller
     {
-        public ActionResult Index(BlockListItem item, string alias)
+        public ActionResult Index(IPublishedElement item, string alias)
         {
-            if (alias == "bLock")
+            if (alias == "redBlock")
             {
-                var block = new BLock(item.Content);
+                return GenerateRedBlockViewModel(item, alias);
+            }
+            else if (alias == "blackBlock")
+            {
+                var block = new BlackBlock(item);
                 return PartialView("BlockList/Components/" + alias, block);
             }
+            else if (alias == "blueBlock")
+            {
+                var block = new BlueBlock(item);
+                return PartialView("BlockList/Components/" + alias, block);
+            }
+
             return null;
+        }
+
+        private ActionResult GenerateRedBlockViewModel(IPublishedElement item, string alias)
+        {
+            var block = new RedBlock(item);
+            return PartialView("BlockList/Components/" + alias, new PublishedElementViewModel<RedBlock, RedViewModel>
+            {
+                Block = block,
+                ViewModel = new RedViewModel
+                {
+                    DisplayTitle = !string.IsNullOrEmpty(block.Title)
+                }
+            });
         }
     }
 }

@@ -2,10 +2,10 @@
 
 namespace TutorialCode.ViewModel.Base
 {
-    public class ComposedPageViewModel<TPage, TViewModel>
-        where TPage : PublishedContentModel
+    public class PublishedElementViewModel<TBlock, TViewModel>
+        where TBlock : PublishedElementModel
     {
-        public TPage Page { get; set; }
+        public TBlock Block { get; set; }
 
         public TViewModel ViewModel { get; set; }
     }

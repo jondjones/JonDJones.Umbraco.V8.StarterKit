@@ -1,0 +1,15 @@
+﻿@model Umbraco.Core.Models.Blocks.BlockListItem
+
+@{
+    var blockLit = new RedBlock(Model.Content);
+    var displayTitle = !string.IsNullOrEmpty(blockLit.Title); // remeber ;
+}
+
+<div>
+    @{
+        if (displayTitle)
+        {
+            @blockLit.Title
+        }
+    }
+</div>

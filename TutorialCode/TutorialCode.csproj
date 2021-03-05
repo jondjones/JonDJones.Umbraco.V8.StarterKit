@@ -254,6 +254,7 @@
     <Compile Include="ContentFinder\ContentFinder.cs" />
     <Compile Include="Controllers\Umbraco\CachingController.cs" />
     <Compile Include="Controllers\Umbraco\CheeryQueryController.cs" />
+    <Compile Include="Controllers\Umbraco\GridsController.cs" />
     <Compile Include="ScheduledTask\MyLogger.cs" />
     <Compile Include="Components\RouteTable.cs" />
     <Compile Include="Controllers\Blocks\BlockController.cs" />
@@ -271,6 +272,8 @@
     <Compile Include="Service\IHomepageService.cs" />
     <Compile Include="Service\ISettingsService.cs" />
     <Compile Include="Service\SettingsService.cs" />
+    <Compile Include="ViewModel\Base\PublishedElementViewModel.cs" />
+    <Compile Include="ViewModel\Partials\RedViewModel.cs" />
     <Compile Include="ViewModel\Partials\HeaderViewModel.cs" />
     <Compile Include="ViewModel\ScopedExample.cs" />
     <Compile Include="ViewModel\Umbraco\CheeryQueryViewModel.cs" />

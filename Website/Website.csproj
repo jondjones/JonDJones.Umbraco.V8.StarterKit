@@ -445,7 +445,7 @@
     <Content Include="Views\HamsterDance.cshtml" />
     <Content Include="Views\Home.cshtml" />
     <Content Include="Views\InsultAPI.cshtml" />
-    <Content Include="Views\BlockList\Components\bLock.cshtml" />
+    <Content Include="Views\BlockList\Components\redBlock.cshtml" />
     <Content Include="Views\Grids.cshtml" />
     <Content Include="Views\ViewModels.cshtml" />
     <Content Include="Views\CringeSayings.cshtml" />
@@ -463,6 +463,10 @@
     <Content Include="Views\Shared\_Cache.cshtml" />
     <Content Include="Views\Partials\CacheTime.cshtml" />
     <Content Include="Views\Partial.cshtml" />
+    <Content Include="Views\BlockList\Components\blackBlock.cshtml" />
+    <Content Include="Views\BlockList\Components\blueBlock.cshtml" />
+    <Content Include="Views\BlockList\Components\nonNiceWay.cshtml" />
+    <Content Include="Views\Properties.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

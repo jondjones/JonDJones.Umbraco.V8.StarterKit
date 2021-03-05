@@ -1,0 +1,30 @@
+﻿@model TutorialCode.ViewModel.Base.PublishedElementViewModel<RedBlock, TutorialCode.ViewModel.Partials.RedViewModel>
+
+<style>
+    body {
+        background-color: #201148;
+    }
+
+    .redcontent {
+        background-color: #ff34b3;
+        height: 25vh;
+        width: 100vw;
+        color: white;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        max-width: 400px;
+        margin: auto;
+    }
+</style>
+
+@if (Model.ViewModel.DisplayTitle)
+{
+    <div class="redcontent">
+        <h2>
+            @Model.Block.Title
+        </h2>
+    </div>
+}
