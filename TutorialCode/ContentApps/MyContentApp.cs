@@ -15,7 +15,7 @@ namespace TutorialCode.ContentApps
                 return new ContentApp
                 {
                     Alias = "myContentApp",
-                    Name = "MyContentApp",
+                    Name = "Rick Roll Me",
                     Icon = "icon-cloud",
                     View = UriUtility.ToAbsolute($"/App_Plugins/MyContentApp/myContentApp.html"),
                     Weight = -100,

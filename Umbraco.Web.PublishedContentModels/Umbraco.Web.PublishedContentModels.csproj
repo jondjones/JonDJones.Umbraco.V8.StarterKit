@@ -396,6 +396,10 @@
     <Compile Include="Image.generated.cs" />
     <Compile Include="InsultApi.generated.cs" />
     <Compile Include="Member.generated.cs" />
+    <Compile Include="Menu.generated.cs" />
+    <Compile Include="MenuContainer.generated.cs" />
+    <Compile Include="MenuItem.generated.cs" />
+    <Compile Include="MenuPageExample.generated.cs" />
     <Compile Include="Properties.generated.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RedBlock.generated.cs" />

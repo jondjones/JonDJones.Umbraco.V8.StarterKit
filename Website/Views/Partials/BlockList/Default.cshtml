@@ -9,6 +9,7 @@
         if (block?.ContentUdi == null) { continue; }
         var data = block.Content;
 
-        @Html.Action("Index", "Block", new { item = (IPublishedElement)data, alias = data.ContentType.Alias })
+        @Html.Action("Index", "Block",
+        new { item = (IPublishedElement)data, alias = data.ContentType.Alias })
     }
 </div>

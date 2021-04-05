@@ -308,13 +308,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="App_Start\FilterConfig.cs" />
-    <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Plugins\MyContentApp\myContentApp.html" />
+    <Content Include="App_Plugins\RickRollMe\lang\en-US.xml" />
     <Content Include="App_Plugins\uSync8\backoffice\uSync8\dashboard.html" />
     <Content Include="App_Plugins\uSync8\backoffice\uSync8\uSyncDashboardController.js" />
     <Content Include="App_Plugins\uSync8\changeDialog.html" />
@@ -467,10 +465,11 @@
     <Content Include="Views\BlockList\Components\blueBlock.cshtml" />
     <Content Include="Views\BlockList\Components\nonNiceWay.cshtml" />
     <Content Include="Views\Properties.cshtml" />
+    <Content Include="Views\Backend\MyAdmin.cshtml" />
+    <Content Include="Views\MenuPageExample.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

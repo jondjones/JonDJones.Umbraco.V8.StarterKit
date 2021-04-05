@@ -9,6 +9,17 @@ namespace JDJ.Core.Composer
     {
         public void Initialize()
         {
+            //Admin Route Example
+            RouteTable.Routes.MapRoute(
+               "AdminDefault",
+               "umbraco/backoffice/Plugins/Backend/MyAdmin",
+               new
+               {
+                   controller = "Backend",
+                   action = "MyAdmin",
+                   id = UrlParameter.Optional
+               });
+
             RouteTable.Routes.MapRoute(
                "DI",
                "DI",
@@ -19,6 +30,7 @@ namespace JDJ.Core.Composer
                    id = UrlParameter.Optional
                });
 
+            //Caching Example
             RouteTable.Routes.MapRoute(
                "NoCachePartial",
                "Caching/Partial",
@@ -39,6 +51,7 @@ namespace JDJ.Core.Composer
                    id = UrlParameter.Optional
                });
 
+            //Vanilla MVC Example
             RouteTable.Routes.MapRoute(
                "SharedPartial",
                "Partial/{action}/{id}",
@@ -49,6 +62,7 @@ namespace JDJ.Core.Composer
                    id = UrlParameter.Optional
                });
 
+            //BlockListTemplateExtensions List Editor Example
             RouteTable.Routes.MapRoute(
                 "BlockController",
                 "Block/{action}/{item}/{alias}",

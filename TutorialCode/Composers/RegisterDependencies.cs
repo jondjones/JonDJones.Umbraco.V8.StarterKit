@@ -33,7 +33,11 @@ namespace TutorialCode.Composers
             composition.Components().Append<ComponentOne>();
             // composition.Components().Append<ReoccurringTasks>();
 
+            // E13
+            composition.Register<BackendController>(Lifetime.Request);
+
             // Content Apps
+            composition.ContentApps().Append<MyContentApp>();
 
             // Content ContentFinders
             composition.ContentFinders();
